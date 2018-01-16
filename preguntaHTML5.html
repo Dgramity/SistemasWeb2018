@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.js"></script>
+    <meta name="tipo_contenido" content="text/html;" http-equiv="content-type" charset="utf-8">
+	<title>Preguntas</title>
+    <link rel='stylesheet' type='text/css' href='estilos/style.css' />
+	<link rel='stylesheet' 
+		   type='text/css' 
+		   media='only screen and (min-width: 530px) and (min-device-width: 481px)'
+		   href='estilos/wide.css' />
+	<link rel='stylesheet' 
+		   type='text/css' 
+		   media='only screen and (max-width: 480px)'
+		   href='estilos/smartphone.css' />
+  </head>
+  <body>
+  <div id='page-wrap'>
+	<header class='main' id='h1'>
+		<span class="right"><a href="registro">Registrarse</a></span>
+      		<span class="right"><a href="login">Login</a></span>
+      		<span class="right" style="display:none;"><a href="/logout">Logout</a></span>
+		<h2>Quiz: el juego de las preguntas</h2>
+    </header>
+	<nav class='main' id='n1' role='navigation'>
+		<span><a href='layout.html'>Inicio</a></spam>
+		<span><a href='preguntaHTML5.html'>Preguntas</a></spam>
+	</nav>
+    <section class="main" id="s1">
+    <div class="alert-danger"   id="alerta" style="display:none";>
+    <strong>Error!</strong> Complete todas las casillas marcadas con *. </div>
+	<div class="alert-danger"   id="alerta1" style="display:none";>
+    <strong>Error!</strong> Pregunta demasiado breve (min 20). </div>
+	<div class="alert-danger"   id="alerta2" style="display:none";>
+    <strong>Error!</strong> El formato del correo es incorrecto. </div>
+	
+	<div>
+	
+	<form  id='fpreguntas' name='fpreguntas' action='prueba.php'>
+
+    <div>
+        Direccion de correo(*):<br><input type="text" name="correo" id="correo" pattern="^[a-z]+\d{3}@ikasle\.ehu\.(es|eus)$" required/>
+    </div>
+    <div>
+        Pregunta(*):<br><input type="text" name="pregunta" id="pregunta" pattern="^[\s\S]{10,50}$" required/>
+    </div>
+    <div>
+        Respuesta correcta(*):<br><input type="text" name="correcta" id="correcta" required/>
+    </div>
+    <div>
+        Respuesta incorrecta 1(*):<br><input type="text" name="incorrecta1" id="incorrecta1" required/>
+    </div>
+	<div>
+        Respuesta incorrecta 2(*):<br><input type="text" name="incorrecta2" id="incorrecta2" required/>
+    </div>
+	<div>
+        Respuesta incorrecta 3(*):<br><input type="text" name="incorrecta3" id="incorrecta3" required/>
+    </div>
+	<div>
+        Tema de la pregunta (*):<br><input type="text" name="tema" id="tema" required/>
+    </div>
+	<div>
+		
+		Complejidad:<select id="complejidad" name="complejidad">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+			<option>4</option>
+			<option>5</option>
+		</select>
+	</div>
+	<div>
+		<input type="submit" value="Enviar" id="boton">
+	</div>
+	</form>
+	<script>
+	$("#fpreguntas").validate();
+	</script>
+	</div>
+    </section>
+	<footer class='main' id='f1'>
+		<p><a href="http://es.wikipedia.org/wiki/Quiz" target="_blank">Que es un Quiz?</a></p>
+		<a href='https://github.com'>Link GITHUB</a>
+	</footer>
+</div>
+ 
+</script> 
+</body>
+</html>

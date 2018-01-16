@@ -1,0 +1,5 @@
+git init
+git add .
+git commit -m "Lab2A"
+git remote add xxx https://github.com/Dgramity/Lab2A.git
+git push -u xxx master
