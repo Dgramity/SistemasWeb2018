@@ -1,5 +1,4 @@
-
-	<?php  
+<?php
 
 	//expresiones regulares 
 	$no_vacio ="/^\s*$/"; //para campos obligatorios
@@ -69,6 +68,6 @@
 		$xml->asXML('preguntas.xml');
 
 		echo "Pregunta añadida";
-		//}
+		}
 	?>
 

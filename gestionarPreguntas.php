@@ -239,5 +239,7 @@ $("#archivo").change(function () {
 </body>
 </html>
 <?php
+}else{
+header("Location:layout.html");
 }
 ?>

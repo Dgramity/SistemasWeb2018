@@ -46,5 +46,7 @@ if(isset($_SESSION['correo'])){
 </body>
 </html>
 <?php
+}else{
+header("Location:layout.php");
 }
 ?>

@@ -5,9 +5,7 @@
 			<p>Tag HTML para anadir un formulario</p>
 		</itemBody>
 		<correctResponse>
-			<value>
-				FORM
-			</value>
+			<value>FORM</value>
 		</correctResponse>
 		<incorrectResponses>
 			<value> OBJECT </value>
@@ -15,4 +13,4 @@
 			<value> DIV </value>
 		</incorrectResponses>
 		</assessmentItem>
-</assessmentItems>
+<assessmentItem complexity="1" subject="sd" author="dlopez064@ikasle.ehu.eus"><itemBody><p>he arreglado la redirecion?</p></itemBody><correctResponse><value>si </value></correctResponse><incorrectResponses><value>qwq</value><value>qw</value><value>qw</value></incorrectResponses></assessmentItem><assessmentItem complexity="1" subject="as" author="dlopez064@ikasle.ehu.eus"><itemBody><p>solo falla la validacion del pass</p></itemBody><correctResponse><value>si </value></correctResponse><incorrectResponses><value>asd</value><value>as</value><value>asd</value></incorrectResponses></assessmentItem></assessmentItems>

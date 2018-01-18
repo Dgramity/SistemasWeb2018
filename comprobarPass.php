@@ -1,8 +1,8 @@
 <?php
-require_once('nusoap.php');
-require_once('class.wsdlcache.php');
+require_once('/nusoap.php');
+require_once('/class.wsdlcache.php');
 //creamos el objeto de tipo soap_server
-$ns="http://localhost/comprobarPass.php?wsdl";
+$ns="https://self-begotten-aster.000webhostapp.com/SistemasWeb2018/comprobarPass.php?wsdl";
 $server = new soap_server;
 $server->configureWSDL('comprobarPass',$ns);
 $server->wsdl->schemaTargetNamespace=$ns;

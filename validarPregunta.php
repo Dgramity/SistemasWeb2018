@@ -43,11 +43,11 @@ if($Complejidad > 0 && $Complejidad < 6){
 		throw new Exception($error);
 	}
                         ?>
-				<script> alert("Pregunta actualizada correctamente"); location.href="RevisarPreguntas.php"</script> 
+				<script> alert("Pregunta actualizada correctamente"); location.href="revisarPreguntas.php"</script> 
 			<?php
 }else{
  ?>
-				<script> alert("La complejidad tiene que ser un numero entre 1 y 5"); location.href="RevisarPreguntas.php"</script> 
+				<script> alert("La complejidad tiene que ser un numero entre 1 y 5"); location.href="revisarPreguntas.php"</script> 
 			<?php
 }
 	}	

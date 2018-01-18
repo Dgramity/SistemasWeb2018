@@ -64,5 +64,7 @@ mysqli_close($iden);
 </body>
 </html>
 <?php
+}else{
+header("Location:layout.html");
 }
 ?>

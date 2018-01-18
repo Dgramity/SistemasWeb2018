@@ -97,5 +97,5 @@ function ocultar(str){
 	</body>
 </html>
 <?php }else{
-header("Location:layout_prof.php");
+header("Location:layout.html");
 }?>

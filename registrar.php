@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <script>
 function pass_val(){
 		xmlhttp = new XMLHttpRequest();
@@ -109,7 +109,7 @@ $("#archivo").change(function () {
 		<br /><input type="submit" value="Registrar usuario" id="boton">
 	</div>
 	</form>
-	<?php  
+<?php  
 	if(isset($_POST['correo'])){
 		//expresiones regulares 
 		$no_vacio ="/^\s*$/"; //para campos obligatorios
@@ -126,9 +126,13 @@ $("#archivo").change(function () {
 		{ 
 		echo "Error en los datos";
 		} 
+		else if (strcmp($_POST['pass'], $_POST['pass2']) !== 0) 
+		{ 
+		echo "Error en los datos";
+		}
 		else{
 			// Se conecta al SGBD 
-			$iden = mysqli_connect("localhost", "root", "","Quiz")or die("Error: No se pudo conectar")or die("Error: No se pudo conectar");
+			$iden = mysqli_connect("localhost", "id3061678_danelopez", "mibasededatos","id3061678_quiz")or die("Error: No se pudo conectar")or die("Error: No se pudo conectar");
 		
 		
 		//comprobamos que hayamos pasado la imagen
@@ -150,17 +154,17 @@ $("#archivo").change(function () {
 					{
 					die('Error: ' . mysqli_error($iden));
 					}
-
-			echo '<script type="text/javascript"> 
+    
+		    echo '<script type="text/javascript"> 
 			alert("usuario añadido!!");
+			window.location.replace("login.php");
 			</script>';
-			header("Location:login.php");
 		
 			
 	mysqli_close($iden);
 	}
 	}	
-	?> 
+	?>
 	</div>
     </section>
 	<footer class='main' id='f1'>
